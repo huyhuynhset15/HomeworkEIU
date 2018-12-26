@@ -3,36 +3,47 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>Problem 2</title>
-</head>
-<style media="screen">
-  b{
-  color: red;
-}
-button{
-  color: black;
-  /* background-color: lightblue */
-}
-.container{
-  position: relative;
-  width: 400px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 0px auto;
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-}
+  <style type="text/css" media="screen">
+  #title{
+    text-align: center;
+  }
+  .container{
+    position: relative;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+    /*text-align: center;*/
+  }
+  button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+  }
 </style>
-
+</head>
 <body>
   <form>
     <div class="container">
-      Member name: <input type="text" name="memberName" required value="" placeholder="Minh Huy"><br>
-      <br>
-      Email: <input type="email" name="email" required value="" placeholder="example@email.com"><br>
-      <br>
-      School: <input type="school" name="school" required value="" placeholder="EIU"><br>
-      <br>
+      <p id="title"><b>Student Information</b></p>
+      Member name: <input class="form-control" type="text" name="memberName" required value="" placeholder="Minh Huy" maxlength="4"><br>
+      Gender*:
+      <input type="radio" id="gender" name="gender" value="Male" checked>
+      <label for="Male">Male</label>
+      <input type="radio" id="gender" name="gender" value="Female">
+      <label for="Female">Female</label><br><br>
+      Email: <input class="form-control" type="email" name="email" required value="" placeholder="example@email.com"><br>
+      School: <input class="form-control" type="text" name="school" required value="" placeholder="EIU"><br>
       <button type="submit">Submit</button>
     </div>
   </form>
