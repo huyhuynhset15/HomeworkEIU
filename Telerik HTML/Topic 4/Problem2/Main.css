@@ -1,0 +1,9 @@
+#textCenter{
+  text-align: center;
+}
+.container{
+  position: relative;
+  width: 600px;
+  margin: 0px auto;
+  padding: 20px 20px 20px 20px;
+}
