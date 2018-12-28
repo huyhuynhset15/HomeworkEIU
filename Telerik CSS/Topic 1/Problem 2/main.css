@@ -1,0 +1,16 @@
+.title{
+  background-color: #52be52;
+  color: #ffffff;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr:nth-child(2n+2){
+  background-color: rgb(255, 255, 215);
+}
+td{
+  text-align: center;
+}
