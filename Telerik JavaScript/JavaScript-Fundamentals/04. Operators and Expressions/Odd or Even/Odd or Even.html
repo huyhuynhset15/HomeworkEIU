@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <script language="javascript">
+      function result() {
+      var input = document.getElementById("inputNumber").value;
+      if (input == 0){
+        alert("Please enter a number.");
+      } else {
+        if (input % 2 == 0) {
+          document.getElementById("result").innerText = (input + " this is even number.");
+        }
+        else document.getElementById("result").innerText = (input + " this is odd number.");
+      }
+    }
+  </script>
+    <input type="text" id="inputNumber" value="" />
+    <button onclick="result()">Show result</button>
+    <div id="result"></div>
+  </body>
+
+</html>
