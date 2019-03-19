@@ -11,13 +11,13 @@
     <script language="javascript">
       function myFunction() {
       var input = document.getElementById("input").value;
-      input = input / 100;
-      input = parseInt(input % 10);
+      input = input / 8;
+      input = parseInt(input % 2);
 
-      if (input == 7) {
-        document.getElementById("result").innerText = ("True");
+      if (input == 1) {
+        document.getElementById("result").innerText = (input);
       }
-      else document.getElementById("result").innerText = ("False " + input);
+      else document.getElementById("result").innerText = (input);
     }
   </script>
     <input type="text" id="input" value="" placeholder="Add number" />

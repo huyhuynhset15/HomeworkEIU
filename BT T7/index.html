@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    </style>
+  </head>
+
+  <body>
+    <table cellspacing="0" cellpadding="6">
+      <tr>
+        <td><b>Full Name:</b></td>
+        <td><input type="text" name="name" id="name" value=""></td>
+        <td><b>Student Code:</b></td>
+        <td><input type="text" name="studentCode" id="studentCode" value=""></td>
+      </tr>
+      <tr>
+        <td><b>Birthdate</b></td>
+        <td><input type="text" name="birthdate" id="birthdate" value=""></td>
+        <td><b>Email:</b></td>
+        <td><input type="email" name="email" id="email" value=""></td>
+      </tr>
+      <tr>
+        <td><b>Class Code:</b></td>
+        <td><input type="text" name="classCode" id="classCode" value=""></td>
+        <td><b>Major:</b></td>
+        <td><input type="text" name="major" id="major" value=""><br></td>
+      </tr>
+    </table>
+    <input type="button" value="Add Student" onClick="addRow()" id="add">
+    <br /><br />
+    <table id="table" border="1" cellspacing="0" cellpadding="6">
+      <thead id="table-head">
+        <tr>
+          <th>Name</th>
+          <th>Student Code</th>
+          <th>birthdate</th>
+          <th>Email</th>
+          <th>Class Code</th>
+          <th>Major</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    <script>
+      function addRow() {
+        "use strict";
+
+        var tableBody = document.getElementById("table-body");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var td3 = document.createElement("td");
+        var td4 = document.createElement("td");
+        var td5 = document.createElement("td");
+        var td6 = document.createElement("td");
+
+        var row = document.createElement("tr");
+
+        td1.innerHTML = document.getElementById("name").value;
+        td2.innerHTML = document.getElementById("studentCode").value;
+        td3.innerHTML = document.getElementById("birthdate").value;
+        td4.innerHTML = document.getElementById("email").value;
+        td5.innerHTML = document.getElementById("classCode").value;
+        td6.innerHTML = document.getElementById("major").value;
+
+        row.appendChild(td1);
+        row.appendChild(td2);
+        row.appendChild(td3);
+        row.appendChild(td4);
+        row.appendChild(td5);
+        row.appendChild(td6);
+
+        tableBody.appendChild(row);
+      }
+    </script>
+  </body>
+
+</html>

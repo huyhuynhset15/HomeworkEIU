@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <script language="javascript">
+      function myFunction() {
+      var x = parseFloat(document.getElementById("x").value);
+      var y = parseFloat(document.getElementById("y").value);
+      var distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+
+      if (distance <= 2) {
+        document.getElementById("result").innerText = ("Yes " + Math.round(distance * 100) / 100.0);
+      } else
+      document.getElementById("result").innerText = ("No " + Math.round(distance * 100) / 100.0);
+    }
+
+  </script>
+    <input type="text" id="x" value="" placeholder="Input x" />
+    <input type="text" id="y" value="" placeholder="Input y" />
+    <button onclick="myFunction()">Enter</button>
+    <div id="result"></div>
+  </body>
+
+</html>
